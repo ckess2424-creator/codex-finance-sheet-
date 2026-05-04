@@ -1,0 +1,9 @@
+:root{--bg:#0b1220;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--green:#22c55e;--red:#f97316;--blue:#60a5fa}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui}
+.app{max-width:1200px;margin:auto;padding:16px}h1{margin:0 0 12px}.toolbar,.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+button,select,input{background:#1f2937;color:var(--text);border:1px solid #374151;border-radius:8px;padding:8px}
+button.active{outline:2px solid var(--blue)} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:850px){.split{grid-template-columns:1fr}}
+.card,.panel{background:var(--card);border-radius:12px;padding:12px}.card strong{font-size:1.2rem}.income strong{color:var(--green)}.expense strong{color:var(--red)}.save strong{color:var(--blue)}
+.full{grid-column:1/-1}.grid4{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.row{display:flex;gap:8px;justify-content:space-between;align-items:center;border-top:1px solid #1f2937;padding:6px 0}.mini{color:var(--muted);font-size:.9rem;padding:2px 0}
+.file input{display:none}
